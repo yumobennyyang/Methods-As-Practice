@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');  /* Import Google Fonts */
+
+body {                              /* Target the entire page body */
+  font-family: 'Roboto', sans-serif;  /* Set the font to Roboto, with sans-serif as backup */
+  background-color: #f5f5f5;          /* Set background color to white */
+  color: #111;                        /* Set text color to dark gray (almost black) */
+  margin: 0;                          /* Remove default spacing around the body */
+  padding: 0;                         /* Remove default internal spacing */
+}
+
+main {                               /* Target the main content area */
+  max-width: 800px;                   /* Limit the maximum width to 800 pixels */
+  margin: 60px auto;                  /* Add 60px top/bottom margin, center horizontally */
+  padding: 0 20px;                    /* Add 20px left/right padding, no top/bottom */
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    opacity: 0.3;
+}
+
+.header-container {
+    background-color:#f5f5f5;
+    position: sticky;
+    top: 0px;
+    padding-top: 20px;
+    border-bottom: #eee solid 0px;
+    background: #f5f5f5;
+    z-index:100;
+}
+
+.subheader {
+    margin-top: 20px;
+    position: sticky;
+    top: 58px;
+    background: #f5f5f5;
+    z-index:100;
+    padding-bottom: 10px;
+}
+
+.disabled, .Lorem {
+    opacity: 0.3;                  
+}
+
+.disabled:hover {
+        opacity: 1;
+
+}
