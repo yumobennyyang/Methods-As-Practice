@@ -1,9 +1,14 @@
-document.querySelectorAll('.accordion').forEach(item => {
-    item.addEventListener('click', () => {
-        const arrow = item.querySelector('.arrow');
-        const content = item.querySelector('.accordion-content');
+function toggleAccordion(element) {
+    element.classList.toggle('active');
 
-        arrow.classList.toggle('rotate');
-        content.classList.toggle('show');
-    });
-});
+    const content = element.querySelector('.accordion-content');
+    const arrow = element.querySelector('.arrow');
+
+    if (element.classList.contains('active')) {
+        content.style.maxHeight = content.scrollHeight + 'px';
+        arrow.style.transform = 'rotate(90deg)';
+    } else {
+        content.style.maxHeight = null;
+        arrow.style.transform = 'rotate(0deg)';
+    }
+}
