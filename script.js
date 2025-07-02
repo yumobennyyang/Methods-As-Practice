@@ -4,13 +4,14 @@
 window.addEventListener('load', adjustImagePosition);
 window.addEventListener('resize', adjustImagePosition);
 
-function toggleAccordion(element) {
-    element.classList.toggle('active');
+function toggleAccordion(titleElement) {
+    const accordionItem = titleElement.parentElement;
+    accordionItem.classList.toggle('active');
 
-    const content = element.querySelector('.accordion-content');
-    const arrow = element.querySelector('.arrow');
+    const content = accordionItem.querySelector('.accordion-content');
+    const arrow = titleElement.querySelector('.arrow');
 
-    if (element.classList.contains('active')) {
+    if (accordionItem.classList.contains('active')) {
         content.style.maxHeight = content.scrollHeight + 'px';
         arrow.style.transform = 'rotate(0deg)';
     } else {
@@ -20,3 +21,10 @@ function toggleAccordion(element) {
 
     setTimeout(adjustImagePosition, 0);
 }
+
+const customCursor = document.getElementById('customCursor');
+
+window.addEventListener('mousemove', function(e) {
+    customCursor.style.left = e.clientX + 'px';
+    customCursor.style.top = e.clientY + 'px';
+});

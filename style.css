@@ -283,3 +283,27 @@ a::after {
 
 
 }
+
+
+/* Custom circle cursor */
+body {
+  cursor: none; /* Hide default cursor */
+}
+
+/* Hide the default cursor */
+body {
+  cursor: none;
+}
+
+/* Custom cursor style */
+.cursor-circle {
+  width: 20px;
+  height: 20px;
+  border: 2px solid black;
+  border-radius: 50%;
+  position: fixed; /* Should be fixed to follow screen, not absolute */
+  pointer-events: none; /* So it doesn't block other elements */
+  transform: translate(-50%, -50%); /* Center the circle on the pointer */
+  transition: transform 0.05s ease; /* Optional: smooth follow effect */
+  z-index: 9999; /* Always on top */
+}
