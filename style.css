@@ -81,6 +81,11 @@ main {
   transition: max-height 0.3s ease, opacity 0.3s ease;
   opacity: 0;
   padding-left: 17px;
+  font-size: small;
+}
+
+.info{
+  margin: 10px 0px;
 }
 
 .accordion-item.active .accordion-content {
@@ -93,7 +98,6 @@ table {
   font-weight: normal !important;
   font-size: small;
   width: 100%;
-  margin: 10px 0px;
 }
 
 th {
