@@ -48,6 +48,7 @@
                     <div class="accordion-content">
                         <div class="info">
 
+                            <div class=" section">From Ivan Sutherland and Those He Inspired</div>
                             <table>
                                 <thead>
                                     <tr>
@@ -132,7 +133,7 @@
                                                 target="_blank">Xerox PARC </a></td>
                                     </tr>
 
-                                    
+
 
                                     <tr>
                                         <td>Doing with Images Makes Symbols</td>
@@ -215,9 +216,95 @@
                     <div class="accordion-title" onclick="toggleAccordion(this)"><span class="arrow">↓</span>Layers of
                         Analysis</div>
                     <div class="accordion-content">
-                        
-                        <img src="./public/analysis0.png" alt="sketchpad1" class="image">
-                        <img src="./public/analysis1.png" alt="sketchpad2" class="image">
+
+
+                        <div class=" section">Visual Analysis</div>
+                        <div class="section2">PRIMITIVES</div>
+                        They are the atomic building blocks of Sketchpad—the “what exists” visually. These geometric
+                        primitives are first-class citizens of the system—each is an object that can be created, stored,
+                        manipulated, and constrained.
+                        <img src="./public/visual1.png" alt="sketchpad1" class="image">
+
+                        <div class="section2">CONSTRAINTS</div>
+                        Sketchpad introduced the idea that geometric relationships could be formally expressed and
+                        enforced. These are relational objects—not visual, but ontologically real within the system.
+                        They mediate and govern interactions between primitives.
+                        <img src="./public/visual2.png" alt="sketchpad2" class="image">
+
+                        <div class="section2">INSTANCE ADN MASTER FIGURE</div>
+                        Sketchpad supports object instancing, a precursor to object-oriented programming. Master Drawing
+                        is a reusable figure defined once, and an instance is a scaled, rotated, or translated copy of a
+                        master figure. These introduce hierarchical composition—drawings made of reusable parts. This
+                        hierarchal structure is essential to modularity and abstraction.
+                        <img src="./public/visual3.png" alt="sketchpad3" class="image">
+
+                        <div class="section2">TRANSFORMATION</div>
+                        Transformations exist as operations but are also definable components in the system.
+                        Transformations can be applied to any instance or primitive, and they define a mathematical
+                        relationship between coordinate systems.
+                        <img src="./public/visual4.png" alt="sketchpad4" class="image">
+
+                        <div class="section2">INTERACTION</div>
+                        Transformations exist as operations but are also definable components in the system.
+                        Transformations can be applied to any instance or primitive, and they define a mathematical
+                        relationship between coordinate systems.
+                        <img src="./public/visual5.png" alt="sketchpad5" class="image">
+
+
+                        <div class=" section">Ontological Analysis</div>
+                        <img src="./public/ontological1.png" alt="sketchpad6" class="image">
+
+                        <div class="section2">INTERNAL DATA STRUCTURES</div>
+                        Under the hood, these structures define how things exist and are connected. These are the computational
+                        substrates that hold and enforce the existence of all other entities.
+                        <br><br>
+                        Node-based structures: Each graphical object has a data node.
+                        <br><br>
+                        Constraint solver: A recursive engine that enforces and propagates constraints.
+                        <br><br>
+                        Display file: Stores drawing commands and their relationships.
+
+                        <img src="./public/ontological2.png" alt="sketchpad7" class="image">
+
+
+                        <div class="section2">Mathematical and Logical Foundations</div>
+                        Sketchpad formalizes geometry through computation. These are abstract entities—they define
+                        behavior, not form—but they are necessary to the ontology of the system as a live, interactive
+                        model.
+                        <br><br>
+                        Geometric algebra: Underlies the constraint system.
+                        <br><br>
+                        Logical assertions: Conditions (if/then relationships) between primitives.
+                        <br><br>
+                        Recursive propagation: Maintains constraint validity across the model.
+
+                        <img src="./public/ontological3.png" alt="sketchpad8" class="image">
+
+
+
+
+                        <div class=" section">Contextual Analysis</div>
+                        Most computers in the Sixties were used for batch processing—punch cards submitted to
+                        mainframes, results printed hours later. The idea of real-time, graphical interaction with a
+                        computer was radical and almost nonexistent in practice. There were no established computer
+                        graphics systems. Basic plotting existed, but the idea of drawing with a computer using a
+                        pen-like device was revolutionary. CRTs (cathode ray tubes) were being explored for direct
+                        visual output, paving the way for visual computing.
+                        <br><br>
+                        Sutherland sought to demonstrate that computers could support visual thinking, not just
+                        numerical calculation. He challenged the notion that computers were only for mathematicians or
+                        engineers—he imagined them as tools for designers, architects, engineers, and eventually
+                        everyone. Sketchpad was implicitly questioning the role of humans in computing—introducing the
+                        idea of human-computer symbiosis (a term popularized by J.C.R. Licklider in 1960).
+                        <br><br>
+                        Although Sutherland couldn’t have foreseen all future applications, Sketchpad laid the
+                        groundwork for CAD softwares, GUI design, video games, virtual and augmented reality. It was the
+                        first system to combine graphical interaction, constraints, object instancing, and real-time
+                        feedback—the origin point of modern GUI and CAD. Sutherland introduced ideas that would reappear
+                        in Object-oriented programming (via master-instance), UX/UI design principles (direct
+                        manipulation), and Parametric modeling (via constraints).
+
+                        <img src="./public/contextual1.png" alt="sketchpad9" class="image">
                     </div>
                 </div>
 
@@ -227,40 +314,50 @@
 
                 <div class="accordion-item">
                     <div class="accordion-title" onclick="toggleAccordion(this)"><span class="arrow">↓</span>Final
-                        Submission</div>
+                        Thoughts</div>
                     <div class="accordion-content">
-                        <p>Lorem Ipsum est dolores corporis ut quam eius qui magni mollitia et quisquam atque. Ut fugit
-                            numquam 33 iste provident sed voluptas commodi rem asperiores perspiciatis. Non velit
-                            accusantium non neque porro et doloribus deleniti et quis explicabo sed error laborum rem
-                            porro nulla. </p>
-                        <p>Eum assumenda voluptas est molestias consectetur id sapiente facere ut expedita molestias 33
-                            dicta aliquid et praesentium accusantium et ipsam quas. Aut omnis optio non amet autem in
-                            voluptatem omnis. Et quia dolor aut quod deserunt aut voluptatem ipsa et quos exercitationem
-                            et sapiente sunt.
-                        </p>
-                        <p>Et necessitatibus exercitationem non velit recusandae non quas modi et quibusdam velit et
-                            quidem dolor ut voluptatem ipsum a rerum excepturi! Et fuga voluptatum nam recusandae vero
-                            cum
-                            ullam illum ut aliquid laboriosam sed ipsam corrupti hic facere earum. Aut dolorem suscipit
-                            ut atque
-                            ipsa id blanditiis maxime. </p>
-                        <p>In voluptas minus non quas magnam id facere aspernatur. Sed dolores reprehenderit eum commodi
-                            quod qui voluptatem reiciendis a galisum unde aut tempore optio id galisum corporis. </p>
-                        <p>Vel dolorem sint ut maxime maiores rem voluptate eius quo dolorem nobis. Est quam explicabo
-                            quo eligendi deserunt eos quisquam architecto ut dolor dolorum aut aspernatur illo ut saepe
-                            facere est internos omnis. Cum voluptatem saepe sit beatae fugit hic deleniti accusamus.
-                        </p>
-                        <p>Qui unde dolorum rem repellendus provident ut molestiae eligendi? Et voluptatem dicta qui
-                            odit voluptas ut dignissimos iure. </p>
+                        <div class=" section">Practice and Methodology</div>
+                        The methodology underlying Sketchpad is a synthesis of computational geometry, logic-based
+                        constraint solving, and interactive interface design. Sutherland’s software approach was
+                        fundamentally object-oriented before the term existed — using data structures to define reusable
+                        “master” figures and establishing relationships between them via constraints. The system’s
+                        architecture was deeply linked to the TX-2 computer’s hardware capabilities, including light pen
+                        input and real-time CRT rendering. From a data perspective, Sketchpad treated geometry not as
+                        static image but as logical structure — a radical reframing of visual form as a manipulable,
+                        rule-based system. The theoretical method was grounded in cybernetics and man–machine symbiosis:
+                        the goal was not automation, but augmentation — creating a medium where human intuition and
+                        machine precision could interact dynamically. In this study, I used temporal structuring and
+                        visual mapping as methodological tools to understand how such computational paradigms evolve,
+                        propagate, and fragment into subdomains like CAD, visual programming, and creative coding.
+
+                        <div class=" section">Rhetorical Positioning</div>
+                        Sketchpad is not just a technical demonstration; it is a rhetorical act — an argument for a new
+                        relationship between humans and computers. By enabling users to draw and manipulate geometry
+                        directly, Sutherland challenged the dominant notion of computers as abstract, symbolic
+                        processors and reframed them as visual, spatial collaborators. The project asserts that drawing
+                        is a form of reasoning, and that logic can be embedded in space — a claim that resonates across
+                        architecture, design, and programming. Within Sutherland’s wider practice, Sketchpad marks the
+                        beginning of a lifelong inquiry into spatial computation, extended later through his work in 3D
+                        graphics and virtual reality. Its influence runs like an invisible thread through nearly every
+                        piece of software I use daily — from Rhino, with its precision modeling and NURBS-based
+                        geometry, to Blender, with its object instancing and transformable 3D views, to Processing,
+                        which echoes Sketchpad’s belief that drawing and logic can coexist in code. Even the
+                        fundamentals of drag-and-drop interfaces, layers, and constraint-based layouts in tools like
+                        Figma or Adobe Illustrator have roots in the direct manipulation paradigm Sketchpad introduced.
+
                     </div>
                 </div>
 
             </div>
+
+            <img src="./public/precedent1.png" alt="sketchpad10" class="image big-image">
+
         </div>
 
-        <div id="bottom-image">
+        <!-- <div id="bottom-image">
             <img src="./public/name.png" alt="name" style=" width: 200px">
-        </div>
+        </div> -->
+
 
 
 

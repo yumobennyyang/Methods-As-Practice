@@ -1,9 +1,24 @@
-
 @font-face {
   font-family: 'sf-pro';
   src: url('./public/SF-Pro-Display-Light.otf') format('opentype');
   font-weight: normal;
   font-style: normal;
+}
+
+
+
+@font-face {
+  font-family: 'sf-pro';
+  src: url('./public/SF-Pro-Display-Bold.otf') format('opentype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+
+
+* {
+  cursor: crosshair !important;
+
 }
 
 body {
@@ -12,6 +27,21 @@ body {
   color: #fff;
   margin: 0;
   padding: 0;
+
+}
+
+
+.section {
+  font-weight: bold;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-size: xx-large;
+}
+
+.section2 {
+  font-weight: bold;
+  font-size: medium;
+  margin-top: 20px;
 
 }
 
@@ -29,7 +59,7 @@ main {
 }
 
 .header-container {
-  background-color: #000  ;
+  background-color: #000;
   position: sticky;
   top: 0px;
   padding-top: 20px;
@@ -40,7 +70,7 @@ main {
   margin-top: 20px;
   position: sticky;
   top: 58px;
-  background-color: #000  ;
+  background-color: #000;
   z-index: 100;
   padding-bottom: 10px;
   color: #ff3800;
@@ -64,9 +94,15 @@ main {
 }
 
 .accordion-title:hover,
-.accordion-item.active .accordion-title {
+.accordion-item.active .accordion-title:hover {
   opacity: 1;
 }
+
+.accordion-item.active .accordion-title {
+  opacity: 0.4;
+}
+
+
 
 .accordion .arrow {
   display: inline-block;
@@ -84,17 +120,20 @@ main {
 .accordion-content {
   max-height: 0;
   overflow: hidden;
-  transition: max-height 0.3s ease, opacity 0.3s ease;
+  transition: max-height 0.3s ease, opacity 0.3s ease, margin-bottom 0.5s ease;
   opacity: 0;
   padding-left: 17px;
+
   font-size: small;
 }
 
-.info{
-  margin: 10px 0px;
+.info {
+
+  margin-top: 10px;
 }
 
 .accordion-item.active .accordion-content {
+  margin-bottom: 20px;
   opacity: 1;
 }
 
@@ -104,11 +143,15 @@ table {
   font-weight: normal !important;
   font-size: small;
   width: 100%;
+
+
 }
 
 th {
   font-weight: normal !important;
   padding: 0;
+  padding-top: 10px;
+
 }
 
 td {
@@ -303,6 +346,14 @@ a::after {
 }
 
 
-.image{
-  width:100%;
+.image {
+  width: 100%;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.big-image {
+  transform: scale(1.02);
+  padding-top: 20px;
+  padding-bottom: 40px;
 }
