@@ -15,12 +15,21 @@
 }
 
 
+.square-peg-regular {
+  font-family: "Square Peg", cursive;
+  font-weight: 400;
+  font-style: normal;
+  height: 19px;
+  font-size: 24px;
+  transform: translateY(-8px);
+}
+
 .fuzzy-overlay {
-  position:fixed;
+  position: fixed;
   inset: -500%;
   background-image: url("./public/noise.png");
   opacity: 20%;
-  z-index:10000;
+  z-index: 10000;
   pointer-events: none !important;
   animation: shift 0.2s linear infinite both;
 }
@@ -29,6 +38,7 @@
   0% {
     transform: translate(10%, 10%);
   }
+
   100% {
     transform: translate(-10%, -10%);
   }
