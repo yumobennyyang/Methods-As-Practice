@@ -49,7 +49,7 @@
 
 * {
   cursor: crosshair !important;
-
+  scrollbar-width: none !important;
 }
 
 body {
