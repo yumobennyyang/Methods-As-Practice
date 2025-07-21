@@ -15,6 +15,27 @@
 }
 
 
+.fuzzy-overlay {
+  position:fixed;
+  inset: -500%;
+  background-image: url("./public/noise.png");
+  opacity: 20%;
+  z-index:10000;
+  pointer-events: none !important;
+  animation: shift 0.2s linear infinite both;
+}
+
+@keyframes shift {
+  0% {
+    transform: translate(10%, 10%);
+  }
+  100% {
+    transform: translate(-10%, -10%);
+  }
+}
+
+
+
 
 * {
   cursor: crosshair !important;
